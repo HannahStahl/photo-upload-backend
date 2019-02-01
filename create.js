@@ -10,7 +10,7 @@ export async function main(event, context) {
       userId: event.requestContext.identity.cognitoIdentityId,
       photoId: uuid.v1(),
       image: data.image,
-      rank: data.rank,
+      imageRank: data.imageRank,
       createdAt: Date.now()
     }
   };

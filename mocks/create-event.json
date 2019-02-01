@@ -1,5 +1,5 @@
 {
-  "body": "{\"image\":\"hello.jpg\",\"rank\":\"0\"}",
+  "body": "{\"image\":\"hello.jpg\",\"imageRank\":\"0\"}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

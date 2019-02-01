@@ -20,7 +20,7 @@ export async function main(event, context) {
     // Sort photos into correct order
     const photos = result.Items;
     photos.sort(function(a, b) {
-      return a.rank - b.rank;
+      return a.imageRank - b.imageRank;
     });
     // Return the photos in response body
     return success(photos);
