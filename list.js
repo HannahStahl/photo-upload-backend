@@ -18,8 +18,13 @@ export async function main(event, context) {
 
   try {
     const result = await dynamoDbLib.call("query", params);
+    // Sort photos into correct order
+    const photos = result.Items;
+    photos.sort(function(a, b) {
+      return a.imageRank - b.imageRank;
+    });
     // Return the matching list of items in response body
-    return success(result.Items);
+    return success(photos);
   } catch (e) {
     return failure({ status: false });
   }
