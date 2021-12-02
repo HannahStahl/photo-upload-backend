@@ -29,6 +29,7 @@
   "dependencies": {
     "acorn": "^5.7.4",
     "babel-runtime": "^6.26.0",
+    "json-schema": "^0.4.0",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.3",
     "serialize-javascript": "^3.1.0",
